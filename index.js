@@ -104,11 +104,11 @@ document.querySelector('.root').addEventListener('click', (event)=> {
     const target = event.target;
     const parent = target.parentElement;
     const index = parent.getAttribute('shape-index');
-    if(target.classList.contains('shape__button-animate')){
+    if(target.classList.contains('card__button-animate')){
         shapes[index].animate();
-    }else if(target.classList.contains('shape__button-perimeter')){
+    }else if(target.classList.contains('card__button-perimeter')){
         alert('El perimetro es de: ' + shapes[index].getPerimeter());
-    }else if(target.classList.contains('shape__button-area')){
+    }else if(target.classList.contains('card__button-area')){
         alert('El area es de: ' + shapes[index].getArea());
     }
 });
