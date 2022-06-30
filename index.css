@@ -1,0 +1,57 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+}
+
+.shape_animation-rotate {
+    animation: rotate 5s;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}
+
+.shape_type-square {
+    background: black;
+    width: 100px;
+    height: 100px;
+}
+
+.shape_type-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.shape_type-triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid;
+}
+
+.shape_color-red {
+    background: red;
+}
+
+.shape_color-blue {
+    background: blue;
+}
+
+.shape_color-green {
+    background: green;
+}
